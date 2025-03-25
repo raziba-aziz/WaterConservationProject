@@ -1,0 +1,190 @@
+body {
+    font-family: "Times New Roman", serif;
+    background-color:  #F5FFFA;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: lightblue;
+    padding: 30px;
+    display: flex;
+    justify-content: flex-end; /* Moves toolbar to the right */
+}
+
+.starting {
+    text-align: center;
+    color: maroon;
+    font-size: 20px;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.logo img {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: darkblue;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+#about, #contact {
+    padding: 30px;
+    background-color: #e3f2fd; /* Light blue background */
+    text-align: center;
+    font-family: "Times New Roman", serif;
+}
+
+
+h2 {
+    color: darkblue;
+}
+
+button {
+    background-color: lightgreen;
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+    color: white;
+}
+
+.event-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 10px;
+    background-color: lightgreen;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.event-btn:hover {
+    background-color: green;
+    color: white;
+}
+
+.event-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.event-item button {
+    padding: 5px 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.event-item button:hover {
+    background-color: darkblue;
+}
+
+.horizontal-section {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.event-item {
+    flex: 0 0 auto;
+    width: 300px;
+    padding: 15px;
+    background: lightblue;
+    border-radius: 8px;
+    text-align: left;
+    border: 1px solid #ccc;
+    word-wrap: break-word; /* Ensures long words break */
+    overflow-wrap: break-word; /* Additional support for word breaking */
+    white-space: normal; /* Allows text to wrap normally */
+}
+
+
+.event-item h3 {
+    margin-bottom: 10px;
+}
+
+.event-item button {
+    padding: 5px 10px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.event-item button:hover {
+    background-color: navy;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+}
+
+.close {
+    color: red;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: darkred;
+}
+
