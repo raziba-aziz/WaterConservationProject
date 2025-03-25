@@ -1,7 +1,7 @@
 # Water Conservation Website
 The Water Conservation Website is designed to promote sustainable water usage by helping users track their consumption, access educational resources, participate in conservation events, and report water wastage. This project encourages responsible water usage by providing personalized recommendations, insightful information, and interactive community-driven features.
 <br>
-🌱 Features:
+🌱 Features:<br>
 💧 Water Monitor: Input daily water usage and receive tailored suggestions to reduce waste.<br>
 📖 Information Hub: Learn about the importance of water conservation, tips to save water, and its environmental impact.<br>
 📅 Events Section: Host or join water conservation initiatives and awareness programs.<br>
