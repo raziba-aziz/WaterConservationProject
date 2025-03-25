@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Conservation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="logo1.jpg" alt="Water Conservation Logo">
+    </div>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#water-monitor">Water Monitor</a></li>
+                <li><a href="#information">Information</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#report">Report</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <section class="starting" >
+        "Hey there, water warrior!💧🌍 Ready to make a difference?<br> 
+        <br>
+        Water is one of our most precious resources, and conserving it is crucial for a sustainable future. This website is designed to help you track your water consumption, get personalized suggestions on how to reduce waste, and even participate in or host water conservation events!<br>
+        <br>
+        Navigate through the toolbar to explore different features:<br>
+        <br>
+        ✔ Water Monitor – Enter your daily water usage and receive smart tips on how to save more.<br>
+        ✔ Information – Learn why water conservation matters and discover practical ways to make an impact.<br>
+        ✔ Events – Host or join water conservation events to take real action in your community.<br>
+        ✔ Report – Spot water wastage? Let us know so we can spread awareness and take action.<br>
+        ✔ Contact & About – Get to know the creator and the purpose behind this initiative.<br>
+        <br>
+        💙 Every drop counts, and so does every action. Start your journey towards a greener future today!<br>
+    </section>
+
+    <section id="water-monitor">
+        <h2>Water Monitor</h2>
+        <p>Enter your daily water usage (in liters) for different activities:</p>
+        <br>
+        <br>
+        <label for="kitchen">Kitchen (Washing dishes, cooking, etc.):</label>
+        <input type="number" id="kitchen" placeholder="Liters used">
+        <br>
+        <br>
+        <label for="bathroom">Bathroom (Shower, toilet flush, etc.):</label>
+        <input type="number" id="bathroom" placeholder="Liters used">
+        <br>
+        <br>
+        <label for="laundry">Laundry (Washing clothes):</label>
+        <input type="number" id="laundry" placeholder="Liters used">
+        <br>
+        <br>
+        <label for="outdoor">Outdoor (Gardening, washing car, etc.):</label>
+        <input type="number" id="outdoor" placeholder="Liters used">
+        <br>
+        <br>
+        <button onclick="calculateUsage()">Calculate</button>
+        <br>
+        <br>
+        <h3>Suggestions:</h3>
+        <p id="suggestions"></p>
+    </section>
+    
+
+    <section id="information">
+        <h2>Why Conserve Water?</h2>
+        <p>Water conservation is crucial for sustaining life and preventing scarcity.</p>
+        <h3>How to Conserve?</h3>
+        <ul>
+            <li>Turn off taps while brushing.</li>
+            <li>Fix leaks promptly.</li>
+            <li>Use water-efficient appliances.</li>
+        </ul>
+        <h3>Impact of Not Conserving</h3>
+        <p>Water scarcity can lead to droughts, loss of biodiversity, and health issues.</p>
+        <a href="learn-more.html" class="learn-more-btn">Learn More</a>
+    </section>
+
+    <section id="events">
+        <h2>Water Conservation Events</h2>
+        <p>Do you want to host an event or join an existing one?</p>
+        <a href="host-event.html" class="event-btn">Host an Event</a>
+        <a href="join-event.html" class="event-btn">Join an Event</a>
+    </section>
+    
+
+    <section id="report">
+        <h2>Report Water Wastage</h2>
+        <p>Spotted water wastage? Let us know.</p>
+        <textarea id="report-input" placeholder="Describe the issue..."></textarea>
+        <button onclick="submitReport()">Submit</button>
+        <p id="report-status"></p>
+    </section>
+
+    <section id="about">
+        <h1>About This Website</h1>
+        <p>
+            This website is dedicated to promoting water conservation by monitoring usage, 
+            providing suggestions, and connecting people through events.
+        </p>
+    </section>    
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <p>Created by: Raziba aziz and Nikhat Kouser</p>
+        <p>Email: razibaaziz11@gmail.com</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
