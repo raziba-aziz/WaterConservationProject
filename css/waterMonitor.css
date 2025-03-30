@@ -1,0 +1,114 @@
+
+/* General Page Styling */
+body {
+    font-family: "Times New Roman", serif;
+    background: linear-gradient(to right, white, rgba(0, 51, 102, 0.9) );
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Navigation Bar */
+header {
+    background: rgba(0, 51, 102, 0.9);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #b4f8c8;
+}
+
+/* Water Monitor Section */
+#water-monitor {
+    background: white;
+    padding: 30px;
+    max-width: 500px;
+    margin: 50px auto;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Heading */
+#water-monitor h2 {
+    color: #004080;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* Input Fields */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    color: #00796b; /* Dark Green */
+    
+}
+.input-group {
+    display: flex;
+    flex-direction: column; /* Stack label & input */
+    align-items: flex-start; /* Align to the left */
+    width: 90%;
+    margin: 2px auto;
+}
+
+
+input {
+    width: 90%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #00796b;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button Styling */
+button {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #002d5a;
+}
+
+/* Suggestions Styling */
+#suggestions {
+    font-size: 18px;
+    color: #d32f2f; /* Red for emphasis */
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: left;  /* Align text to the left */
+    margin-left: 5%; 
+    
+}

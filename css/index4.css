@@ -1,0 +1,224 @@
+/* Global Styles */
+body {
+    font-family: "Times New Roman", serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.general {
+    background: linear-gradient(to right, white, rgba(0, 51, 102, 0.9) );
+}
+
+/* Header & Navbar */
+header {
+    background: rgba(0, 51, 102, 0.9);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #b4f8c8;
+}
+
+/* Slideshow */
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin-top: 60px;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+.text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Introduction Section */
+.intro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 50px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.left-text {
+    width: 45%;
+}
+
+.right-slideshow img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* did you know Styling */
+.did-you-know {
+    text-align: center;
+    padding: 50px 0;
+    /* background: linear-gradient(to right, white, rgba(0, 51, 102, 0.9) ); */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Title Styling */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #004080;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Carousel Container */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+}
+
+/* Carousel Scrolling Area */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+    gap: 20px;
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+.carousel::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome/Safari */
+}
+
+/* Individual Fact Cards */
+.fact-card {
+    flex: 0 0 250px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.fact-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Fact Card Images */
+.fact-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.fact-card:hover img {
+    transform: rotate(10deg) scale(1.1);
+}
+
+/* Navigation Buttons */
+.scroll-btn {
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    transition: background 0.3s ease-in-out;
+}
+
+.scroll-btn:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.left-btn {
+    left: -40px;
+}
+
+.right-btn {
+    right: -40px;
+}
+
+/* Fade-In Effect */
+.did-you-know {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.did-you-know.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .carousel-container {
+        max-width: 95%;
+    }
+    .fact-card {
+        flex: 0 0 200px;
+    }
+    .scroll-btn {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
