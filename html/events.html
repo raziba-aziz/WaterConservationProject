@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Conservation Events</title>
+    <link rel="stylesheet" href="/css/events.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+ <!-- Navigation Bar -->
+ <header>
+    <!-- <h1>Water Conservation</h1> -->
+    <nav>
+        <ul>
+            <li><a href="index4.html">Home</a></li>
+                <li><a href="/html/watermonitor.html">Water Monitor</a></li>
+                <li><a href="/html/info.html">Information</a></li>
+                <li><a href="/html/events.html">Events</a></li>
+                <li><a href="/html/report.html">Report</a></li>
+                <li><a href="/html/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+    <br><br><br><br>
+    
+    <h2>
+        <h2>Join the Water Conservation Movement!</h2>
+        <p>Be a part of the change. Host or join an event to help conserve water.</p>
+    </h2>
+
+    <main class="events-container">
+        <section id="events">
+            <h2>Get Involved in Water Conservation</h2>
+            <p>Choose whether you want to **host** an event or **join** an existing one.</p>
+            <div class="event-buttons">
+                <a href="#host-event" class="event-btn">Host an Event</a>
+                <a href="#join-event" class="event-btn">Join an Event</a>
+            </div>
+        </section>
+    </main>
+
+    
+    <section id="host-event">
+        <h2>Host an Event</h2>
+        <form id="hostEventForm">
+            <label for="event-name">Event Name:</label>
+            <input type="text" id="event-name" required>
+            
+            <label for="event-description">Description:</label>
+            <textarea id="event-description" required></textarea>
+            
+            <label for="event-venue">Venue:</label>
+            <input type="text" id="event-venue" required>
+            
+            <label for="event-start">Start Date:</label>
+            <input type="date" id="event-start" required>
+            
+            <label for="event-end">End Date:</label>
+            <input type="date" id="event-end" required>
+            
+            <label for="event-capacity">Capacity:</label>
+            <input type="number" id="event-capacity" required>
+            
+            <label for="event-fee">Registration Fee:</label>
+            <input type="text" id="event-fee" required>
+            
+            <button type="submit">Host Event</button>
+        </form>
+    </section>
+    
+    <section id="join-event">
+        <h2>Ongoing & Upcoming Events</h2>
+        <div id="event-list" class="event-cards-container"></div>
+    </section>
+    
+    <div id="registration-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeForm()">&times;</span>
+            <h3>Register for Event</h3>
+            <form id="registrationForm">
+                <label for="reg-name">Name:</label>
+                <input type="text" id="reg-name" required>
+                
+                <label for="reg-email">Email:</label>
+                <input type="email" id="reg-email" required>
+                
+                <label for="reg-contact">Contact Number:</label>
+                <input type="text" id="reg-contact" required>
+                
+                <div id="payment-section" style="display: none;">
+                    <label for="payment-method">Payment Method:</label>
+                    <select id="payment-method">
+                        <option value="credit-card">Credit Card</option>
+                        <option value="debit-card">Debit Card</option>
+                        <option value="paypal">PayPal</option>
+                    </select>
+                </div>
+                
+                <button type="button" onclick="submitRegistration()">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
+    <script src="/js/events.js"></script>
+
+</body>
+</html>
