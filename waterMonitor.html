@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Monitor</title>
+    <link rel="stylesheet" href="/css/waterMonitor.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+<section class="general">
+    <header>
+        <!-- <h1>Water Conservation</h1> -->
+        <nav>
+            <ul>
+                <li><a href="index4.html">Home</a></li>
+                <li><a href="watermonitor.html">Water Monitor</a></li>
+                <li><a href="info.html">Information</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="report.html">Report</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="water-monitor">
+        <h2>Water Monitor</h2>
+        <p>Enter your daily water usage (in liters) for different activities:</p>
+        
+        <div class="input-group">
+        <label for="kitchen">Kitchen (Washing dishes, cooking, etc.):</label>
+        <input type="number" id="kitchen" placeholder="Liters used">
+        
+        <label for="bathroom">Bathroom (Shower, toilet flush, etc.):</label>
+        <input type="number" id="bathroom" placeholder="Liters used">
+        
+        <label for="laundry">Laundry (Washing clothes):</label>
+        <input type="number" id="laundry" placeholder="Liters used">
+        
+        <label for="outdoor">Outdoor (Gardening, washing car, etc.):</label>
+        <input type="number" id="outdoor" placeholder="Liters used">
+        <br>
+        
+        <button onclick="calculateUsage()">Calculate</button>
+        <br>
+        
+        <h3>Suggestions:</h3>
+        <p id="suggestions"></p>
+        </div>
+    </section>
+<script src="/js/waterMonitor.js"></script>
+</section>
+</body>
+</html>
